@@ -1,0 +1,47 @@
+<!--pages/page1/test.wxml-->
+<view class="main">
+  <view class="weight">
+    <view class="weight-num">
+        <view>{{weight}}<span>公斤</span></view>
+    </view>
+    <view class="recoder-button" bindtap='changeWeight'>
+        记体重
+    </view>
+  </view>
+  <view class="update" wx:if="{{noRecode}}">还未记录数据</view>
+  <view class="update" wx:else>{{newestTime.year}}年{{newestTime.month}}月{{newestTime.day}}号更新</view>
+  
+  <view class="message">
+      <view class="tag">
+          <view class="tag-p">目标</view>
+          <view class="num tag-p">{{targetWeight}}</view>
+      </view>
+      <view class="tag">
+          <view  class="tag-p">BMI</view>
+          <view class="num tag-p">{{massIndex}}</view>
+          <view class="supplement tag-p">
+              <span wx:if="{{massIndex >= 18.5 && massIndex <=24}}">标准</span>
+              <span class="thin" wx:elif="{{massIndex < 18.5}}">偏瘦</span>
+              <span class="fat" wx:elif="{{massIndex > 24 && massIndex <= 28}}">偏重</span>
+              <span class="fater" wx:elif="{{massIndex > 28}}">肥胖</span>
+          </view>
+      </view>
+      <view class="tag">
+          <view class="tag-p">比上次</view>
+          <view class="num tag-p">
+             {{contrast}}% 
+            <image wx:if="{{plusOrminus>0}}" class='arrow' src="../img/green_arrow.svg"></image>
+            <image wx:if="{{plusOrminus<0}}" class='arrow' src="../img/red_arrow.svg"></image>
+          </view>
+      </view>
+  </view>
+</view>
+<view class="button-area">
+  <button class="button" size="mini" bindtap="weekData">周数据</button>
+  <button class="button" size="mini" bindtap="monthData">月数据</button>
+  <button class="button" disabled size="mini">年数据</button>
+</view>
+<view class="container">
+    <ec-canvas id="mychart-dom-bar" canvas-id="mychart-bar" ec="{{ ec }}"></ec-canvas>
+</view>
+

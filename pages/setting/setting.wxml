@@ -1,0 +1,43 @@
+<!--pages/setting/setting.wxml-->
+<view class="main">
+  <view class="set-item">
+      <image class="left_arrow" src="../img/icon_left_arrow.svg"></image>
+      <picker class="pickerarea" bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+          <view class="picker">
+            身高：
+            <text class="picker_num">{{array[index]}} cm</text>
+          </view>
+      </picker>
+      
+  </view>
+  <view class="set-item">
+      <image class="left_arrow" src="../img/icon_left_arrow.svg"></image>
+      <picker class="pickerarea" mode="multiSelector" bindchange="bindMultiPickerChange" value="{{multiIndex}}" range="{{multiArray}}">
+        <view class="picker">
+          体重目标：
+          <text class="picker_num">{{multiArray[0][multiIndex[0]]}}{{multiArray[1][multiIndex[1]]}} kg</text>
+        </view>
+      </picker>
+  </view>
+  <view class="set-item">
+      <view class="title-view">圆环长度：</view>
+      <view class="body-view">
+        <slider bindchange="circleLengthChange" value="{{circleLength}}" min="25" max="35" block-size="18" show-value/>
+      </view>
+  </view>
+  <view class="set-item">
+      <view class="title-view">红长：</view>
+      <view class="body-view">
+        <slider bindchange="redLengthChange" value="{{redLength}}" min="3" max="8" block-size="18" show-value/>
+      </view>
+  </view>
+  <view class="set-item set-padding">
+      后台备份<text style="font-weight:normal">（仅在Wi-Fi下进行）</text>
+      <switch class="swich" checked bindchange="switchChange"/>
+  </view>
+   <view class="set-item set-padding" bindtap="toManageData">
+      <image class="left_arrow" src="../img/icon_left_arrow.svg"></image>
+      数据管理
+  </view> 
+</view>
+

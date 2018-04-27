@@ -1,0 +1,70 @@
+/* pages/setting/setting.wxss */
+page{
+  background-color: #f6f8f9;
+}
+.main{
+  width: 100%;
+}
+.set-item{
+  height: 80rpx;
+  width: 100%;
+  margin-top: 30rpx;
+  background-color: white;
+  font-size: 32rpx;
+  line-height: 80rpx;
+  font-weight: bold;
+  position: relative;
+  display: flex;
+}
+.set-item.set-padding{
+  padding-left: 20rpx;
+  box-sizing: border-box;
+}
+.picker_num{
+  float: right;
+  padding-right: 40rpx; 
+}
+.set-item .pickerarea{
+  width: 100%;
+  height: 100%; 
+  padding: 0 20rpx;
+  box-sizing: border-box;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0)
+}
+.set-item .left_arrow{
+  width: 40rpx;
+  height: 40rpx;
+  position: absolute;
+  right: 10rpx;
+  top: 25rpx;
+}
+.set-item .title-view{
+  padding-left: 20rpx;
+  width: 160rpx;
+}
+.set-item .body-view{
+  flex: 1;
+  line-height: 40rpx;
+}
+.swich{
+  position: absolute;
+  right: 10rpx;
+  top: -3rpx;
+}
+.wx-switch-input{
+  width:104rpx !important;
+  height:60rpx !important;
+}
+/*白色样式（false的样式）*/
+.wx-switch-input::before{
+  width:100rpx !important;
+  height: 56rpx !important;
+}
+/*绿色样式（true的样式）*/
+.wx-switch-input::after{
+  width: 60rpx !important;
+  height: 56rpx !important;
+}

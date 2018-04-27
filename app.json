@@ -1,0 +1,41 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/massIndex/massIndex",
+    "pages/setWeight/setWeight",
+    "pages/setting/setting",
+    "pages/manageData/manageData"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "My BMI",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "selectedColor": "#fee199",
+    "color": "#ffffff",
+    "backgroundColor": "#e397f5",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "pages/img/home.png",
+        "selectedIconPath": "pages/img/home_active.png"
+      },
+      {
+        "pagePath": "pages/massIndex/massIndex",
+        "text": "体重",
+        "iconPath": "pages/img/weight.png",
+        "selectedIconPath": "pages/img/weight_active.png"
+      },
+      {
+        "pagePath": "pages/setting/setting",
+        "text": "设置",
+        "iconPath": "pages/img/set.png",
+        "selectedIconPath": "pages/img/set_active.png"
+      }
+    ]
+  }
+}

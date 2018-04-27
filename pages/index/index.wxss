@@ -1,0 +1,139 @@
+/**index.wxss**/
+    .home{
+        width: 100%;
+    }
+    .circle-area{
+        width: 728rpx;
+        height: 728rpx;
+        margin: 100rpx auto 0 auto;
+        position: relative;
+    }
+    .head-pic{
+        width: 210rpx;
+        height: 210rpx;
+        /* border-radius: 50%;
+        background: #e397f5;
+        background:linear-gradient(to bottom,#e397f5,#fb9eb6);
+        padding: 9rpx;
+        box-sizing: border-box; */
+        position: absolute; 
+        left: 50%;
+        top: 0;
+        transform: translateX(-50%);
+    }
+    .head-pic .pic-img{
+        width: 192rpx;
+        height: 192rpx;
+        border-radius: 50%;
+        border: 8rpx #e397f5 solid;
+    }
+    .cir-pic{
+        width: 728rpx;
+        height: 728rpx;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+    .cir-pic .cir-bg{
+        width: 88%;
+        height: 88%;
+        position: absolute;
+        left: 5.5%;
+        top: 6%;
+    }
+    .canvas{
+        width: 728rpx;
+        height: 728rpx;
+    }
+    .current-day{
+        width: 100rpx;
+        height: 100rpx;
+        border: 4rpx #c9e97b solid;
+        box-sizing: border-box;
+        border-radius: 50%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 10;
+        background-color: white;
+        cursor: pointer;
+        user-select: none;  
+        overflow: hidden;
+    }
+    .current-day .date{
+        font-size: 24rpx;
+        margin-top: 20rpx;
+        text-align: center;
+        line-height: 26rpx;
+        height: 26rpx;
+        color: #c9e97b;
+    }
+    .current-day .week{
+        font-size: 22rpx;
+        text-align: center;
+        line-height: 26rpx;
+        height: 26rpx;
+        color: #c9e97b;
+    }
+    .start-arrow{
+        width: 40rpx;
+        height: 40rpx;
+        position: absolute;
+        left: 16.5%;
+        top: 19%;
+    }
+    .end-arrow{
+        width: 40rpx;
+        height: 40rpx;
+        position: absolute;
+        left: 77.5%;
+        top: 19%;
+    }
+    .flower{
+        width: 48rpx;
+        height: 48rpx;
+        position: absolute;
+        left: 67%;
+        top: 82%;
+    }
+    .bg-img{
+      width: 20rpx;
+      height: 20rpx;
+      position: absolute;
+      left: 10rpx;
+      top: 10rpx;
+    }
+    .flower .bg-img{
+      width: 24rpx;
+      height: 24rpx;
+      left: 12rpx;
+      top: 12rpx;
+    }
+    .text{
+      width: auto;
+      height: 80rpx;
+      line-height: 80rpx;
+      color: red;
+      font-size: 52rpx;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%,-50%)
+    }
+
+.main{
+  width: 100%;
+}
+.pickerView{
+  padding: 0 40rpx;
+  box-sizing: border-box;
+  width: 100%; 
+  height: 100rpx; 
+}
+.selectStyle{
+  height: 100rpx;
+}
+.column{
+  margin:0 60rpx;
+  text-align: center;
+}

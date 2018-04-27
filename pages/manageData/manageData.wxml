@@ -1,0 +1,23 @@
+<!--pages/manageData/manageData.wxml-->
+<view class="title">数据管理</view>
+<view class="table">
+  <view class="tr">
+    <view class="th" style="width:28%">时间</view>
+    <view class="th" style="width:16%">BMI</view>
+    <view class="th" style="width:16%">体重</view>
+    <view class="th" style="flex:1;border-right:none">操作</view>
+  </view>
+  <view wx:for="{{recodeData}}" wx:key="" class="tr">
+    <view class="td" style="width:28%">{{item[0]}}</view>
+    <view class="td" style="width:16%">{{item[1]}}</view>
+    <view class="td" style="width:16%">{{item[2]}}</view>
+    <view class="td lastTd">
+      <view class="buttons">
+        <button class="button" plain="true" size="mini" type="primary" disabled="true">修改</button>
+      </view>
+      <view class="buttons">
+        <button class="button" plain="true" size="mini" type="warn" data-index="{{index}}" bindtap="del">删除</button>
+      </view>
+    </view>
+  </view>
+</view>

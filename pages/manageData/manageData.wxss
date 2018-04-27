@@ -1,0 +1,46 @@
+
+.title{
+  height: 80rpx;
+  line-height: 80rpx;
+  font-size: 34rpx;
+  padding: 0 20rpx;
+  box-sizing: border-box;
+  font-weight: bold;
+}
+.tr{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.tr .th{
+  height: 70rpx;
+  line-height: 70rpx;
+  text-align: center;
+  border-right: 1rpx solid #ddd;
+  border-top: 1rpx solid #ddd;
+  background-color: #e397f5;
+  font-size: 34rpx;
+}
+
+.tr .td{
+  height: 70rpx;
+  line-height: 70rpx;
+  text-align: center;
+  border-right: 1rpx solid #ddd;
+  border-bottom: 1rpx solid #ddd;
+  font-size: 28rpx;
+}
+.buttons{
+  flex: 1;
+}
+.lastTd{
+  display: flex;
+  flex-direction: row;
+  flex:1;
+  border-right:none;
+}
+.button{
+  margin-top: 2rpx;
+}
+

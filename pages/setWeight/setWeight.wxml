@@ -1,0 +1,23 @@
+<!--pages/setWeight/setWeight.wxml-->
+<view class="section">
+  <picker mode="date" value="{{date}}" start="2018-01-01" end="{{endTime}}" bindchange="bindDateChange">
+    <view class="picker">
+      日期: {{date}}
+    </view>
+  </picker>
+</view>
+
+<view class="main">
+  <picker-view indicator-class="selectStyle" class="pickerView" value="{{value}}" bindchange="bindChange">
+    <picker-view-column class="column">
+      <view wx:for="{{integers}}" wx:key="" style="line-height: 50px">{{item}}</view>
+    </picker-view-column>
+    <picker-view-column class="column">
+      <view wx:for="{{decimals}}" wx:key="" style="line-height: 50px">{{item}}kg</view>
+    </picker-view-column>
+  </picker-view>
+   <view class="footer">
+    <button type="primary" style="width:400rpx; height:80rpx；line-height:80rpx" bindtap="sure">确定</button>
+  </view> 
+</view>
+

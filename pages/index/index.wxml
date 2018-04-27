@@ -1,0 +1,51 @@
+<!--index.wxml-->
+<view class="home">
+    <view class="circle-area">
+        <!-- <view class="cir-pic">
+            <image class="cir-bg" src="{{src}}"></image>
+        </view>
+        <view class="head-pic">
+            <image class="pic-img" src="{{userInfo.avatarUrl}}"></image>
+        </view>
+        <view class="start-arrow" bindtap="nextPosition">
+            <image class='bg-img' src="../img/start_arrow.png"></image>
+        </view>
+        <view class="end-arrow" bindtap="nextPosition">
+            <image class='bg-img' src="../img/end_arrow.png"></image>
+        </view>
+        <view class="flower">
+            <image class='bg-img' src="../img/flower.png"></image>
+        </view>
+        <view class="text">还差{{leftDays}}天</view>-->
+        <!-- <view class="current-day" id="current-day" bindtouchmove="touchmove" bindtouchstart="touchstart" bindtouchend="touchend" style="left:{{left}}px;top:{{top}}px;">
+            <view class="date">{{date}}</view>
+            <view class="week">{{week}}</view>
+        </view>   -->
+
+         <canvas style="width: 728rpx; height: 728rpx;" canvas-id="canvas">
+            <cover-view class="head-pic">
+                <cover-image class="pic-img" src="{{userInfo.avatarUrl}}"></cover-image> 
+            </cover-view>
+            <cover-view class="start-arrow" bindtap="prePosition">
+                <cover-image class='bg-img' src="../img/start_arrow.png"></cover-image>
+            </cover-view>
+            <cover-view class="end-arrow" bindtap="nextPosition">
+                <cover-image class='bg-img' src="../img/end_arrow.png"></cover-image>
+            </cover-view>
+            <cover-view class="flower" style="left:{{x}}px;top:{{y}}px;">
+                <cover-image class='bg-img' src="../img/flower.png"></cover-image>
+            </cover-view>
+            <cover-view class="text">还差{{leftDays}}天</cover-view>
+            <cover-view class="current-day" id="current-day" style="left:{{left}}px;top:{{top}}px;">
+                <cover-view class="date">{{date}}</cover-view>
+                <cover-view class="week">{{week}}</cover-view>
+            </cover-view>   
+        </canvas> 
+    </view>
+</view>
+
+<view class="body-view" style='margin-top:120rpx'>
+  <slider bindchange="changePosition" value="{{currentIndex}}" min="1" max="{{monthDays}}" block-size="18" show-value/>
+</view>
+
+
