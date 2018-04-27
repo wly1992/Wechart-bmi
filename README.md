@@ -1,2 +1,2 @@
 # Wechart-bmi
-mini programs 
+>A mini program that records weight and creates a BMI chart.
