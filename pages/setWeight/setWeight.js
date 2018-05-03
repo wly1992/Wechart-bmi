@@ -19,7 +19,8 @@ Page({
   onLoad: function (options) {
     let weight = options.weight;
     let month = ('000' + (new Date().getMonth() + 1)).substr(-2, 2);
-    let date = `${new Date().getFullYear()}-${month}-${new Date().getDate()}`;
+    let day = ('000' + new Date().getDate()).substr(-2, 2);
+    let date = `${new Date().getFullYear()}-${month}-${day}`;
     this.setData({
       value: weight.split('.'),
       date: date,
